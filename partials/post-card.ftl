@@ -11,7 +11,7 @@
                 <#if post.categories?? && post.categories?size gt 0>
                     <span class="post-card-tags">${post.categories[0].cateName}</span>
                 </#if>
-                <h2 class="post-card-title">${post.postTitle}</h2>
+                <h2 class="post-card-title"><#if post.originalType="1">[原]<#elseif post.originalType="2">[转]</#if>${post.postTitle}</h2>
             </header>
             <section class="post-card-excerpt">
                 <p>${post.postSummary!}</p>

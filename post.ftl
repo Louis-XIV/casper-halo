@@ -26,7 +26,7 @@ into the {body} of the default.hbs template -->
                     <span class="date-divider">/</span> <a href="/categories/${post.categories[0].cateUrl}">${post.categories[0].cateName}</a>
                     </#if>
                 </section>
-                <h1 class="post-full-title">${post.postTitle}</h1>
+                <h1 class="post-full-title"><#if post.originalType="1">[原]<#elseif post.originalType="2">[转]</#if>${post.postTitle}</h1>
             </header>
 
             <#if post.postThumbnail??>
@@ -37,7 +37,7 @@ into the {body} of the default.hbs template -->
             <section class="post-full-content">
                 <div class="post-content">
                     ${post.postContent!}
-                    <#include "partials/post-copyright.ftl">
+                    <#if post.originalType="1"><#include "partials/post-copyright.ftl"></#if>
                 </div>
             </section>
 

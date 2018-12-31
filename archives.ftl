@@ -57,7 +57,7 @@ into the {body} of the default.hbs template -->
                             <ul class="listing">
                                 <#list archive.posts?sort_by("postDate")?reverse as post>
                                     <li>
-                                        ${post.postDate?string('MM月dd日')}：<a href="${options.blog_url}/archives/${post.postUrl}">${post.postTitle}</a>
+                                        ${post.postDate?string('MM月dd日')}：<a href="${options.blog_url}/archives/${post.postUrl}"><#if post.originalType="1">[原]<#elseif post.originalType="2">[转]</#if>${post.postTitle}</a>
                                     </li>
                                 </#list>
                             </ul>
