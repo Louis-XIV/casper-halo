@@ -63,11 +63,10 @@
                     <@common.footer_info />
                 </section>
                 <nav class="site-footer-nav">
-                    <a href="${options.blog_url}">Latest Posts</a>
-                    <a href="https://www.facebook.com/ghost" target="_blank" rel="noopener">Facebook</a>
-                    <a href="https://twitter.com/tryghost" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://gitee.com/louis-xiv/halo" target="_blank" rel="noopener">Gitee</a>
+                    <a href="https://blog.csdn.net/weixin_42830563" target="_blank">CSDN</a>
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-                    <a href="https://github.com/ruibaby/halo" target="_blank" rel="noopener">Halo</a>
+                    <a href="https://gitee.com/babyrui/halo" target="_blank" rel="noopener">Halo</a>
                 </nav>
             </div>
         </footer>

@@ -1,5 +1,5 @@
 <#include "default.ftl">
-<@default title="文章归档 | ${options.blog_title!}" keyword="${options.seo_keywords!}" desc="${options.seo_desc!}" canonical="${options.blog_url}/archives" body_class="page-template">
+<@default title="全部文章 | ${options.blog_title!}" keyword="${options.seo_keywords!}" desc="${options.seo_desc!}" canonical="${options.blog_url}/archives" body_class="page-template">
 
 <#-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template -->
@@ -18,7 +18,7 @@ into the {body} of the default.hbs template -->
         <article class="post-full post page <#if !options.casper_general_archives_cover??>no-image</#if>">
 
             <header class="post-full-header">
-                <h1 class="post-full-title">文章归档</h1>
+                <h1 class="post-full-title">全部文章</h1>
             </header>
 
             <#if options.casper_general_archives_cover??>
